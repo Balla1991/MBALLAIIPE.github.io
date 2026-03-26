@@ -122,7 +122,19 @@
 
     </div>
 
-    <footer>&copy; 2026 Dr. Balla Mounika | IIPE</footer>
+    <footer>
+        <p>&copy; 2026 Dr. Balla Mounika | IIPE</p>
+        <p id="last-updated" style="font-size: 0.85em; color: #999; margin-top: 5px;"></p>
+    </footer>
+
+    <script>
+        // This script automatically detects the last modification date of the file
+        const lastMod = new Date(document.lastModified);
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('last-updated').innerHTML = 
+            "Last Updated: " + lastMod.toLocaleDateString('en-US', options);
+    </script>
+
 
 </body>
 </html>
