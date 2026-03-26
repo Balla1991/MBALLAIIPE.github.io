@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dr. Balla Mounika | Teaching | IIPE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Georgia', serif; margin: 0; background: #f4f4f4; color: #333; line-height: 1.4; }
+        .header-bar { background: #002147; color: white; padding: 30px; text-align: center; }
+        
+        nav { 
+            position: sticky; top: 0; background: white; padding: 12px; 
+            text-align: center; border-bottom: 2px solid #002147; z-index: 1000;
+        }
+        nav a { text-decoration: none; color: #002147; font-weight: bold; margin: 0 12px; font-size: 0.85em; text-transform: uppercase; }
+        nav a:hover { color: #cc0000; }
+
+        .container { max-width: 800px; margin: 20px auto; background: white; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 4px; }
+        
+        h2 { color: #002147; border-bottom: 2px solid #002147; padding-bottom: 8px; margin-top: 0; font-size: 1.5em; }
+
+        /* --- GROUPED TEACHING BOXES --- */
+        .teaching-group {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-left: 5px solid #002147;
+            margin-bottom: 25px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .group-header {
+            background: #f1f1f1;
+            padding: 10px 15px;
+            margin: 0;
+            color: #002147;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* --- VERTICAL LIST STYLING --- */
+        .course-list {
+            display: flex;
+            flex-direction: column; /* Forces vertical stack */
+        }
+
+        .course-item {
+            padding: 12px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.2s;
+            font-weight: 500;
+            color: #444;
+        }
+
+        .course-item:last-child { border-bottom: none; }
+
+        .course-item:hover {
+            background: #f9fbfd;
+            color: #002147;
+            padding-left: 25px; /* Subtle "slide" effect on hover */
+        }
+
+        .course-item i {
+            color: #00695c;
+            font-size: 0.8em;
+            width: 20px;
+            text-align: center;
+        }
+
+        footer { text-align: center; padding: 20px; font-size: 0.75em; color: #888; }
+    </style>
+</head>
+<body>
+
+    <div class="header-bar">
+        <h1>Dr. Balla Mounika</h1>
+        <p>Assistant Professor | IIPE</p>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+        <a href="teaching.html">Teaching</a>
+    </nav>
+
+    <div class="container">
+        <h2>Teaching</h2>
+        <p style="margin-bottom: 20px; color: #666;">Courses and laboratory sessions I taught at IIPE.</p>
+
+        <div class="teaching-group">
+            <h3 class="group-header"><i class="fas fa-book-open"></i> Undergraduate (UG) Courses</h3>
+            <div class="course-list">
+                <div class="course-item"><i class="fas fa-chevron-right"></i> Transport Phenomena</div>
+                <div class="course-item"><i class="fas fa-chevron-right"></i> Particle Technology</div>
+                <div class="course-item"><i class="fas fa-chevron-right"></i> Process Equipment Design</div>
+                <div class="course-item"><i class="fas fa-chevron-right"></i> Process Safety</div>
+            </div>
+        </div>
+
+        <div class="teaching-group" style="border-left-color: #546e7a;">
+            <h3 class="group-header"><i class="fas fa-flask-vial"></i> Laboratory Sessions</h3>
+            <div class="course-list">
+                <div class="course-item"><i class="fas fa-microscope"></i> Particle Technology & Fuel Lab</div>
+            </div>
+        </div>
+
+        <div class="teaching-group" style="border-left-color: #00695c;">
+            <h3 class="group-header"><i class="fas fa-calculator"></i> Electives</h3>
+            <div class="course-list">
+                <div class="course-item"><i class="fas fa-plus"></i> Mathematical Methods in Chemical Engineering</div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>&copy; 2026 Dr. Balla Mounika | IIPE</footer>
+
+</body>
+</html>

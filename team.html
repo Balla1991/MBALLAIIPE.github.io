@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dr. Balla Mounika | Research Team | IIPE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Georgia', serif; margin: 0; background: #f4f4f4; color: #333; line-height: 1.4; }
+        .header-bar { background: #002147; color: white; padding: 30px; text-align: center; }
+        
+        nav { 
+            position: sticky; top: 0; background: white; padding: 12px; 
+            text-align: center; border-bottom: 2px solid #002147; z-index: 1000;
+        }
+        nav a { text-decoration: none; color: #002147; font-weight: bold; margin: 0 12px; font-size: 0.85em; text-transform: uppercase; }
+        nav a:hover { color: #00695c; }
+
+        .container { max-width: 900px; margin: 20px auto; background: white; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 4px; }
+        
+        h2 { color: #002147; border-bottom: 2px solid #002147; padding-bottom: 8px; margin-top: 0; font-size: 1.5em; }
+
+        /* --- GROUPED TEAM BOXES --- */
+        .team-group {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-left: 5px solid #002147;
+            margin-bottom: 25px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .group-header {
+            background: #f1f1f1;
+            padding: 10px 15px;
+            margin: 0;
+            color: #002147;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* --- MEMBER ROW STYLING --- */
+        .member-item {
+            display: flex;
+            gap: 20px;
+            padding: 15px;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+        .member-item:last-child { border-bottom: none; }
+        .member-item:hover { background: #fafafa; }
+
+        .member-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #002147;
+            background: #eee;
+        }
+
+        .member-info h4 { margin: 0; color: #002147; font-size: 1.1em; }
+        .member-info p { margin: 2px 0; font-size: 0.9em; color: #555; }
+        .member-tag { 
+            font-size: 0.75em; 
+            background: #e0f2f1; 
+            color: #00695c; 
+            padding: 2px 8px; 
+            border-radius: 10px; 
+            font-weight: bold;
+        }
+
+        /* --- UG SECTION COMPACT --- */
+        .ug-counter {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #f0f4f8;
+            padding: 10px 20px;
+            border-radius: 30px;
+            color: #546e7a;
+            font-weight: bold;
+            border: 1px solid #cfd8dc;
+        }
+
+        footer { text-align: center; padding: 20px; font-size: 0.75em; color: #888; }
+    </style>
+</head>
+<body>
+
+    <div class="header-bar">
+        <h1>Dr. Balla Mounika</h1>
+        <p>Assistant Professor | IIPE</p>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+        <a href="teaching.html">Teaching</a>
+    </nav>
+
+    <div class="container">
+        <h2>Research Team</h2>
+
+        <div class="team-group">
+            <h3 class="group-header"><i class="fas fa-user-graduate"></i> PhD Scholars</h3>
+            
+            <div class="member-item">
+                <img src="geetha.jpg" alt="S. Geetha Priya" class="member-img">
+                <div class="member-info">
+                    <h4>S. Geetha Priya</h4>
+                    <p><strong>Research:</strong> Interaction and stability of a bubble pair</p>
+                    <p><span class="member-tag">Joined: July 2023</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-group" style="border-left-color: #00695c;">
+            <h3 class="group-header"><i class="fas fa-flask"></i> Project JRF</h3>
+            
+            <div class="member-item">
+                <img src="jrf.jpg" alt="K. Rama Krishna" class="member-img">
+                <div class="member-info">
+                    <h4>K. Rama Krishna</h4>
+                    <p><strong>Research:</strong> Study on freely falling drops</p>
+                    <p><span class="member-tag">Joined: October 2025</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-group" style="border-left-color: #546e7a; border-bottom: none;">
+            <h3 class="group-header"><i class="fas fa-users"></i> Undergraduate Students</h3>
+            <div style="padding: 20px;">
+                <div class="ug-counter">
+                    <i class="fas fa-user-friends"></i>
+                    <span>Total : 08 Students</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>&copy; 2026 Dr. Balla Mounika | IIPE</footer>
+
+</body>
+</html>
